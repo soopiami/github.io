@@ -12,12 +12,7 @@ a {
     color: black;
 }
 
-h1 {
-    color: #fff;
-    margin-top: 1.3em;
-}
-
-input:focus {outline: none;}
+input:focus { outline: none; }
 
 /*------ header start ---------------------------------*/
 header div {
@@ -27,12 +22,10 @@ header div {
     margin: 0 auto;
 }
 
-.header_top{
-    position: fixed;
-}
-.header_top div { 
-    display: inline; }
+.header_top{ position: fixed; }
+.header_top div { display: inline; }
 .header_top div h1 {
+    color: #fff;
     text-align: center;
     font-size: 50px;
     margin: 20px auto 10px auto;
@@ -53,9 +46,7 @@ header div {
     height: 18px;
     margin: 3px 12px 0 0;
 }
-.search p {
-    margin: 0 auto;
-}
+.search p { margin: 0 auto; }
 
 .appointment{
     float: right;
@@ -72,9 +63,7 @@ header div {
     height: 18px;
     margin: 3px 12px 0 0;
 }
-.appointment p {
-   margin: 0 auto; 
-}
+.appointment p { margin: 0 auto; }
 
 .search a:hover, .appointment a:hover {
     border-bottom: 2px solid #fff;
@@ -96,11 +85,8 @@ header div {
     margin: 0 80px 0 0;
     font-size: 19px;
 }
-.menu a:hover {
-    border-bottom: 3px solid #fff;
-}
-
-.menu li:last-child {margin: 0}
+.menu a:hover { border-bottom: 3px solid #fff; }
+.menu li:last-child { margin: 0 }
 
 #dropDownBackground {
     background-color: black;
@@ -140,9 +126,7 @@ header div {
     margin: 0 0 25px 40px;
 }
 
-.dept {
-    margin: 25px 0 0 0;
-}
+.dept { margin: 25px 0 0 0; }
 .dept li{
     line-height: 40px;
     list-style: none;
@@ -166,9 +150,7 @@ header div {
         width: 12px;
         height: 12px;
     }
-    .menu ul{ 
-        margin: 5px 35px; 
-    }
+    .menu ul{ margin: 5px 35px; }
     .menu li {
         margin: 0 30px 0 0;
         font-size: 12px;
@@ -260,9 +242,7 @@ header div {
 /*------ section_third end ---------------------------*/
 
 /*------ section_fourth start ------------------------*/
-.fourth {
-    text-align: center;
-}
+.fourth { text-align: center; }
 
 .fourth h2 {
     margin: 90px auto 0;
@@ -306,16 +286,13 @@ header div {
     margin: 150px 220px 0 0;
 }
 
-.fifth a {
-    color: #fff;
-}
+.fifth a { color: #fff; }
 /*------ section_fifthend ------------------------*/
 
 /*------ section_sixth start ------------------------*/
 .sixth {
     text-align: center;
     background-color: #cacaca;
-    border-bottom: 18px solid black;
 }
 
 .sixth h2 {
@@ -341,26 +318,22 @@ header div {
 
 /*------ footer start ------------------------*/
 footer {
+    width: 100%;
+    border-top: 18px solid black;
     background-color: #54504d;
     color: #fff;
     font-family: 'Nanum Gothic', sans-serif;
-    padding: 10px 10px 50px 0;
+    padding: 10px 10px 65px 0;
 }
 
-footer div {
-    display: inline-block;
-}
+footer div { display: inline-block; }
 footer div:first-child {
     float: left;
-    margin: 20px 30px 0 50px;
+    margin: 20px 30px 0 40px;
 }
-footer div:nth-child(2) {
-    margin: 18px 0 0 50px;
-}
+footer div:nth-child(2) { margin: 18px 0 0 50px; }
 
-footer a { 
-    color: #fff;
-}
+footer a { color: #fff; }
 
 footer h3 {
     font-weight: 400; 
@@ -376,11 +349,9 @@ footer ul {
 
 .latest {
     float: right;
-    margin: 0 60px;
+    margin: 0 70px;
 }
-.latest h3 {
-    margin: 15px 0 25px; 
-}
+.latest h3 { margin: 15px 0 25px; }
 .latest p {
     font-size: 14px;
     line-height: 10px;
