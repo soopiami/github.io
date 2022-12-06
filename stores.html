@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome">
+        <title>BANTLAY</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/store.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header_top">
+                <div class="search">
+                    <!--<img src="icon/search-white.png"><a href=""><p>Search</p></a>-->
+                </div>            
+                <div><a href="index.html"><h1>BANTLAY</h1></a></div>
+                <div class="appointment">
+                    <!--<img src="icon/appointment-white.png">
+                    <a href="appointment.html"><p>Book an Appointment</p></a>-->
+                </div>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <a href="women.html"><li>Women's</li></a>
+                    <a href="men.html"><li>Men's</li></a>
+                    <a href="collections.html"><li>Collections</li></a>
+                    <a href="world.html"><li>World of BANTLAY</li></a>
+                </ul>
+            </div>
+
+            <div>
+                <div class="dropDownMenu">
+                    <ul class="fullMenu">                    
+                        <li><span>Women's</span>
+                            <ul class="dept">
+                                <a href="women.html"><li>All Women's</li></a>
+                                <a href="women_NecPen.html"><li>Necklaces &#38; Pendants</li></a>
+                                <a href="women_Earrings.html"><li>Earrings</li></a>
+                                <a href="women_Bracelets.html"><li>Bracelets</li></a>
+                                <a href="women_Rings.html"><li>Rings</li></a>
+                            </ul>
+                        </li>
+                        <li><span>Men's</span>
+                            <ul class="dept">
+                                <a href="men.html"><li>All Men's</li></a>
+                                <a href="men_NecPen.html"><li>Necklaces &#38; Pendants</li></a>
+                                <a href="men_Earrings.html"><li>Earrings</li></a>
+                                <a href="men_Bracelets.html"><li>Bracelets</li></a>
+                                <a href="men_Rings.html"><li>Rings</li></a>
+                            </ul>
+                        </li>
+                        <li><span>Collections</span>
+                            <ul class="dept">
+                                <a href="new.html"><li>New Jewelry</li></a>
+                                <a href="popular.html"><li>Most Popular Jewelry</li></a>
+                                <a href="high.html"><li>High Jewelry</li></a>
+                                <a href="unisex.html"><li>Unisex Jewelry</li></a>
+                                <a href="hiphop.html"><li>Hip Hop Jewelry</li></a>
+                            </ul>
+                        </li>
+                        <li><span>World of BANTLAY</span>
+                            <ul class="dept">
+                                <a href="values.html"><li>Our Values</li></a>
+                                <a href="stores.html"><li>Global Flagship Stores</li></a>
+                            </ul>
+                        </li>                    
+                    </ul>                 
+                </div>   
+                <div id="dropDownBackground"></div>
+            </div>
+        </header>
+        
+        <section>
+            <div class="first">
+                <div class="global">
+                    <img src="image/global.JPG">
+                </div>
+                <div class="word">
+                    <h1>Global Flagship Stores</h1>
+                    <p>Explore jewelry, diamond jewelry, luxury accessories and inspired products for any occasion at our flagship stores across the world.</p>
+                </div>
+            </div>          
+        </section>
+        
+        <footer>
+            <div>
+                <h3>Client Care</h3>
+                <ul>
+                    <a href="service.html"><li>Contact Us</li></a>
+                    <a href="ask.html"><li>Frequently Asked Questions</li></a>
+                    <!--<a href="appointment.html"><li>Book an Appointment</li></a>-->
+                    <a href="care.html"><li>Product Care &amp; Repair</li></a>
+                </ul>
+            </div>
+            <div>
+                <h3>Related Sites</h3>
+                <ul>
+                    <a href="http://www.goldria.net/?da_ref=Yz1uN0ZkQ3k=&gclid=CjwKCAiAp7GcBhA0EiwA9U0mtim95aVIhKdYPcPWPpKIalkfiT6yOHfxuRZohe0NcMT6LICdE3P79BoCU-8QAvD_BwE"><li>GOLDRIA</li></a>
+                    <li>GOLD PANG</li>
+                    <li>JK International Company</li>
+                </ul>
+            </div>
+            <div class="latest">
+                <h3>Latest from BANTLAY</h3>
+                <p>Be the first to know about exciting new designs,</p>
+                <p>special events, store openings and much more.</p>
+                <input id="email" type="text" placeholder="Email" onfocus="this.placeholder=''" onblur="this.placeholder='Email'">
+                <div id="getNews">
+                    <a href="new.html"><p>Get News</p></a>
+                </div>
+            </div>
+        </footer>
+        
+		<script>
+            $(document).on('mouseover', '.menu a', function() {
+                $('.dropDownMenu').slideDown(300);
+                $('#dropDownBackground').fadeIn();
+            });
+            $(document).on('mouseleave', '.menu a', function () {
+                $('.dropDownMenu').slideUp(700);
+                $('#dropDownBackground').fadeOut();
+            });
+            $(document).on('mouseover', '.dropDownMenu', function() {
+                $('.dropDownMenu').stop();
+                $('#dropDownBackground').stop();
+            });
+            $(document).on('mouseleave', '.dropDownMenu', function () {
+                $('.dropDownMenu').slideUp(300);
+                $('#dropDownBackground').fadeOut();
+            }); 
+            
+            $(".third a").click(function() {
+                $('html, body').animate({scrollTop : 400}, 400);
+                return false;
+            });
+        </script>
+    </body>
+</html>
